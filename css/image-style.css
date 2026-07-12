@@ -1,0 +1,16 @@
+.images-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.images-logo .images-text {
+  position: absolute;
+  right: 4px;
+  bottom: -0.6rem;
+  color: #4285F4;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=image-style.css.map */

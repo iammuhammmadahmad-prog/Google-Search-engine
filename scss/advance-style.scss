@@ -1,0 +1,148 @@
+$advanced-red: #d93025;
+$header-border: #ebebeb;
+$page-padding: 45px;
+$small-logo-size: 1.5rem;
+$google-blue: #4285F4;
+$google-red: #EA4335;
+$google-yellow: #FBBC05;
+$google-green: #34A853;
+
+$google-colors: $google-blue,
+    $google-red,
+    $google-yellow,
+    $google-blue,
+    $google-green,
+    $google-red;
+.advanced-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 24px;
+
+    background-color: #fff;
+    border-bottom: 1px solid $header-border;
+
+    .google-nav {
+        padding: 0;
+    }
+}
+
+.logo { text-decoration: none; }
+.small {
+        font-size: $small-logo-size;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+
+.advanced-content {
+    padding: 0 $page-padding;
+}
+
+.advanced-title {
+    color: $advanced-red;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 40px 0 24px;
+}
+
+// ADVANCED SEARCH VARIABLES
+
+$form-label-width: 220px;
+$form-input-width: 584px;
+
+$advanced-input-border: #d9d9d9;
+$advanced-input-focus: #4285F4;
+
+$advanced-button: #4d90fe;
+$advanced-button-hover: #357ae8;
+$advanced-button-border: #3079ed;
+$advanced-button-hover-border: #2f5bb7;
+
+$form-padding-left: 45px;
+
+
+.advanced-container {
+    max-width: 900px;
+    padding-left: $form-padding-left;
+    margin-top: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: $form-label-width 1fr;
+    align-items: center;
+    margin-bottom: 18px;
+
+    label {
+        font-size: 13px;
+        color: #333;
+    }
+}
+
+.advanced-input {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: $form-input-width;
+    height: 32px;
+
+    padding: 0 10px;
+
+    border: 1px solid $advanced-input-border;
+    background: #fff;
+
+    font-size: 13px;
+
+    transition: border-color .15s ease;
+
+    &:focus {
+        border-color: $advanced-input-focus;
+        outline: none;
+    }
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+
+    width: calc(#{$form-label-width} + #{$form-input-width});
+
+    margin-top: 24px;
+}
+
+.btn-advanced {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    padding: 0 12px;
+
+    background-color: $advanced-button;
+    color: #fff;
+
+    border: 1px solid $advanced-button-border;
+    border-radius: 2px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color .15s ease,
+        border-color .15s ease,
+        box-shadow .15s ease;
+
+    &:hover {
+        background-color: $advanced-button-hover;
+        border-color: $advanced-button-hover-border;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(66, 133, 244, .35);
+    }
+}
