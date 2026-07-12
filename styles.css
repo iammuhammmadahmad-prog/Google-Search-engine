@@ -11900,6 +11900,7 @@ textarea.form-control-lg {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .search-icon {
@@ -11911,11 +11912,24 @@ textarea.form-control-lg {
   font-size: 1rem;
 }
 
+.search-camera {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
 .search-voice {
   position: absolute;
   right: 48px;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search-icon:hover, .search-camera:hover, .search-voice:hover {
+  color: #4285F4;
   cursor: pointer;
 }
 
